@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meng Reaksmey - Resume</title>
+    <style>
+        :root {
+            --primary-color: #0284c7;
+            --accent-color: #16a34a;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap-reverse;
+        }
+
+        .header-text h1 {
+            font-size: 2.25rem;
+            color: #0f172a;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-text .title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        .skill-tag {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        .timeline-item, .project-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .item-title-blue {
+            color: var(--primary-color);
+        }
+
+        .item-date, .item-location {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .item-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        ul.details-list {
+            padding-left: 1.25rem;
+            color: var(--text-main);
+        }
+
+        ul.details-list li {
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+        }
+
+        .meta-skills {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 1.5rem;
+            }
+
+            .header-content {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- HEADER -->
+        <header>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Meng Reaksmey</h1>
+                    <div class="title">Junior Frontend Developer</div>
+                    <div class="contact-info">
+                        <p>133E0, Street, Sen Sok, Phnom Penh</p>
+                        <p>090283411</p>
+                        <p><a href="mailto:rsmey1668@gmail.com">rsmey1668@gmail.com</a></p>
+                    </div>
+                </div>
+                <img src="picture.jpg" alt="Meng Reaksmey" class="profile-img">
+            </div>
+        </header>
+
+        <main>
+            <!-- SKILLS -->
+            <section>
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li class="skill-tag">HTML</li>
+                    <li class="skill-tag">JavaScript</li>
+                    <li class="skill-tag">C#</li>
+                    <li class="skill-tag">Java</li>
+                </ul>
+            </section>
+
+            <!-- EDUCATION -->
+            <section>
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">Bachelor of Information Technology</span>
+                        <span class="item-date">2025 – Present</span>
+                    </div>
+                    <div class="item-subtitle">Royal University of Phnom Penh</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">High School Diploma</span>
+                        <span class="item-date">2024</span>
+                    </div>
+                    <div class="item-subtitle">Koh Sotin High School</div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section>
+                <h2>Projects</h2>
+                <article class="project-item">
+                    <div class="item-header">
+                        <span class="item-title item-title-blue">Diecast Collection Management Website</span>
+                    </div>
+                    <div class="item-subtitle">HTML, JavaScript</div>
+                    <ul class="details-list">
+                        <li>Created a responsive website to manage a personal diecast car collection.</li>
+                        <li>Organized diecast models systematically by name, brand, model, and status.</li>
+                        <li>Built custom view filters for owned, pre-ordered, and incoming inventory.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section>
+                <h2>Experience</h2>
+                <article class="project-item">
+                    <div class="item-header">
+                        <span class="item-title item-title-blue">Private English Tutor</span>
+                        <span class="item-location">Phnom Penh, Cambodia</span>
+                    </div>
+                    <ul class="details-list">
+                        <li>Provided customized private English language instruction tailored to individual student levels.</li>
+                        <li>Prepared structured lesson plans and practice materials to foster active learning.</li>
+                        <li>Facilitated interactive communication exercises to build student confidence and speaking fluency.</li>
+                    </ul>
+                    <p class="meta-skills"><strong>Key Soft Skills:</strong> Communication, Adaptability, Presentation</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Copyright &copy; 2026 Meng Reaksmey. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
